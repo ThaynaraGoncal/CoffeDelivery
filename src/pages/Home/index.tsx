@@ -1,9 +1,13 @@
-import { HomeContainer, LayoutContainer } from "../../layouts/DefaultLayout/styles"
+import { Intro } from './components/Intro'
+import { OurCoffees } from './components/OurCoffees'
 
-export function Home() {
+import { HomeContainer } from './styles'
+
+export function HomePage() {
   return (
-    <LayoutContainer>
-      <p>Header</p>
-    </LayoutContainer>
+    <HomeContainer>
+      <Intro />
+      <OurCoffees />
+    </HomeContainer>
   )
 }
